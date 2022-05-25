@@ -1,0 +1,10 @@
+<nav class="navbar navbar-light bg-light">
+  <a href="restaurants/new" class="navbar-brand">Create New</a>
+  <a href="restaurants" class="navbar-brand">See All Restaurants</a>
+</nav>
+<h1>Restaurants</h1>
+
+<% @restaurants.each do |restaurant| %>
+<%=link_to restaurant.name, restaurant_path(restaurant), class:"btn btn-light btn-rouded"%>
+<br>
+<% end %>
